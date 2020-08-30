@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.c{
+float:right;
+font-size:20px;
+padding:5px;
+color:violet;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  line-height:40%;
+}
+
+li {
+  float: left;
+  font-size:20px;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  padding: 10px 10px;
+ text-decoration: none;
+}
+
+li a:hover {
+  background-color:black ;
+}
+table th,tr{
+padding:15px;
+}
+</style>
+</head>
+<body>
+<a class="c" href="https://serc.iiit.ac.in/rdip">RDIP</a>
+<a href="https://www.iiit.ac.in/">
+<img src="iiit-new.png" width="70" height="70">
+</a><br><br><br><br>
+<ul>
+<li><a  href="homepage.html">Home</a></li>
+<li><a  href="registration.html">Registration form</a></li><br><br><br><br><br>
+</ul><br>
+<form action="details.html" method="get">
+<table>
+<tr>
+     <th><label for="fname"><b>First name:</b></label></th>
+        <th><input type="text" id="fname" name="fname"></th>
+</tr>
+<tr>
+       <th><label for="email"><b>E-mail:</b></label></th>
+       <th><input type="text" id="email" name="email"></th>
+</tr>
+<tr>
+      <th><label for="phoneno"><b>Phone No:</b></label></th>
+       <th><input for="text" id="phoneno" name="phoneno"></th>
+</tr>
+<tr>
+      <th><label for="gender"><b>Gender:</b></label></th>
+      <th><input type="radio" id="male" name="gender" value="male">
+         <label for="male"><b>Male</b></label>
+        <input type="radio" id="female" name="gender" value="female">
+         <label for="female"><b>Female</b></label>
+         <input type="radio" id="other" name="gender" value="other">
+         <label for="other"><b>Other</b></label></th>
+</tr>
+<tr>
+      <th><label for="reason"><b>Reason for RDIP:</b></label></th>
+       <th><input type="radio" id="html" name="reason" value="html">
+          <label for="html"><b>HTML</b></label>
+        <input type="radio" id="css" name="reason" value="css">
+        <label for="css"><b>CSS</b></label>
+        <input type="radio" id="javascript"  name="reason" value="javascript">
+       <label for="javascript">Javascript</label></th>
+</tr>
+ <tr> 
+    <th><label for ="college">College:</label></th>
+    <th><input type="text" id="college" name="college"</th>
+</tr>
+<tr>
+  <th><input type="checkbox" id="declare" name"=declare" value="I declare above details given by me are true"></th>
+  <th><label for="declare">I declare above details given by me are true</label></th>
+</tr>
+<tr>
+<th><input type="submit" formaction="details.html" value="submit"></th>
+<th><input type="submit" formaction="registration.html" value="reset"></th>
+</tr>
+</table>
+</form>
+</body>
+</html>
